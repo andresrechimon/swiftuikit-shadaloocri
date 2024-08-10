@@ -9,6 +9,7 @@ import UIKit
 
 class MainViewController: UIViewController {
     private var viewModel: MainControllerViewModel = MainControllerViewModel()
+    private var titleSelected: SFTitle?
     
     private lazy var layout: UICollectionViewLayout = {
             let layout = UICollectionViewFlowLayout()
@@ -64,6 +65,7 @@ class MainViewController: UIViewController {
     private lazy var selectButton: SFPrimaryButton = {
         let button = SFPrimaryButton()
         button.setTitle("Let's go!", for: .normal)
+        button.addTarget(self, action: #selector(selectAction), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             button.heightAnchor.constraint(equalToConstant: 50)
@@ -71,6 +73,12 @@ class MainViewController: UIViewController {
         
         return button
     }()
+    
+    @objc func selectAction() {
+        let vc = TitleSelectedViewController()
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -115,6 +123,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             guard let cell: SFTitlesCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SFTitlesCollectionViewCell", for: indexPath) as? SFTitlesCollectionViewCell else { fatalError() }
+        self.titleSelected = viewModel.titles[indexPath.row]
         cell.setup(item: viewModel.titles[indexPath.row])
             
             return cell
@@ -132,6 +141,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
             for cell in sfTitlesCarouselCollectionView.visibleCells {
                 let indexPath = sfTitlesCarouselCollectionView.indexPath(for: cell)
+                self.titleSelected = viewModel.titles[indexPath!.row]
             }
     }
     

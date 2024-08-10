@@ -53,13 +53,12 @@ class SFTitlesCollectionViewCell: UICollectionViewCell {
         super.layoutSubviews()
     }
     
-    func setup(item: SFTitleCell) {
+    func setup(item: SFTitle) {
         self.titleImage.image = UIImage(named: item.image)
         self.titleName.text = item.name
     }
     
     func applyStyle() {
-        self.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(cellContainerView)
         cellContainerView.addSubview(titleContainerView)
         titleContainerView.addSubview(titleImage)
