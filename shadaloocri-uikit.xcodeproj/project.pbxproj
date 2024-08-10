@@ -15,6 +15,7 @@
 		1B53E0B72C67D74500006908 /* ConstantImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B53E0B62C67D74500006908 /* ConstantImage.swift */; };
 		1B685D8D2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D8C2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift */; };
 		1B685D902C67F03300B52DED /* SFTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D8F2C67F03300B52DED /* SFTitleCell.swift */; };
+		1B685D932C680AE200B52DED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B685D922C680AE200B52DED /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1B53E0B62C67D74500006908 /* ConstantImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantImage.swift; sourceTree = "<group>"; };
 		1B685D8C2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTitlesCollectionViewCell.swift; sourceTree = "<group>"; };
 		1B685D8F2C67F03300B52DED /* SFTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTitleCell.swift; sourceTree = "<group>"; };
+		1B685D922C680AE200B52DED /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		1B53E09C2C646A9600006908 /* shadaloocri-uikit */ = {
 			isa = PBXGroup;
 			children = (
+				1B685D912C680ACE00B52DED /* Localizable */,
 				1B685D8E2C67F01C00B52DED /* Models */,
 				1B685D7E2C67E27200B52DED /* Components */,
 				1B685D772C67DC3E00B52DED /* Extensions */,
@@ -129,6 +132,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		1B685D912C680ACE00B52DED /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				1B685D922C680AE200B52DED /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B53E0AA2C646A9700006908 /* LaunchScreen.storyboard in Resources */,
+				1B685D932C680AE200B52DED /* Localizable.strings in Resources */,
 				1B53E0A72C646A9700006908 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

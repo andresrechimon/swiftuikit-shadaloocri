@@ -34,7 +34,7 @@ class MainViewController: UIViewController {
     private lazy var selectTitleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Select your title:"
+        label.text = NSLocalizedString("SF_Select_Your_Titles", comment: "")
         label.textColor = .gray
         label.textAlignment = .center
         label.font = .italicSystemFont(ofSize: 14)
