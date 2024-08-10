@@ -1,5 +1,5 @@
 //
-//  ItalicLabel.swift
+//  SFItalicLabel.swift
 //  shadaloocri-uikit
 //
 //  Created by Andres Rechimon on 10/08/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ItalicLabel: UILabel {
+class SFItalicLabel: UILabel {
     private var size: CGFloat
 
     required init(size: CGFloat) {

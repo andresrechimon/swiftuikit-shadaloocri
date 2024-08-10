@@ -16,8 +16,10 @@
 		1B685D8D2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D8C2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift */; };
 		1B685D902C67F03300B52DED /* SFTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D8F2C67F03300B52DED /* SFTitleCell.swift */; };
 		1B685D932C680AE200B52DED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B685D922C680AE200B52DED /* Localizable.strings */; };
-		1B685D962C680B9400B52DED /* ItalicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D952C680B9400B52DED /* ItalicLabel.swift */; };
+		1B685D962C680B9400B52DED /* SFItalicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D952C680B9400B52DED /* SFItalicLabel.swift */; };
 		1B685D992C680F8B00B52DED /* MainControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D982C680F8B00B52DED /* MainControllerViewModel.swift */; };
+		1B685D9C2C68115500B52DED /* SFPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D9B2C68115500B52DED /* SFPrimaryButton.swift */; };
+		1B685D9E2C68203000B52DED /* ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D9D2C68203000B52DED /* ext+UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +34,10 @@
 		1B685D8C2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTitlesCollectionViewCell.swift; sourceTree = "<group>"; };
 		1B685D8F2C67F03300B52DED /* SFTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTitleCell.swift; sourceTree = "<group>"; };
 		1B685D922C680AE200B52DED /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		1B685D952C680B9400B52DED /* ItalicLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItalicLabel.swift; sourceTree = "<group>"; };
+		1B685D952C680B9400B52DED /* SFItalicLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFItalicLabel.swift; sourceTree = "<group>"; };
 		1B685D982C680F8B00B52DED /* MainControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainControllerViewModel.swift; sourceTree = "<group>"; };
+		1B685D9B2C68115500B52DED /* SFPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPrimaryButton.swift; sourceTree = "<group>"; };
+		1B685D9D2C68203000B52DED /* ext+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext+UIImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		1B685D772C67DC3E00B52DED /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1B685D9D2C68203000B52DED /* ext+UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 		1B685D7E2C67E27200B52DED /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1B685D9A2C68113000B52DED /* Buttons */,
 				1B685D942C680B6400B52DED /* Labels */,
 				1B685D8B2C67EF7100B52DED /* Cells */,
 			);
@@ -148,7 +154,7 @@
 		1B685D942C680B6400B52DED /* Labels */ = {
 			isa = PBXGroup;
 			children = (
-				1B685D952C680B9400B52DED /* ItalicLabel.swift */,
+				1B685D952C680B9400B52DED /* SFItalicLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -160,6 +166,14 @@
 				1B685D982C680F8B00B52DED /* MainControllerViewModel.swift */,
 			);
 			path = MainControllerView;
+			sourceTree = "<group>";
+		};
+		1B685D9A2C68113000B52DED /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				1B685D9B2C68115500B52DED /* SFPrimaryButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,12 +247,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B685D9C2C68115500B52DED /* SFPrimaryButton.swift in Sources */,
 				1B53E09E2C646A9600006908 /* AppDelegate.swift in Sources */,
 				1B53E0B72C67D74500006908 /* ConstantImage.swift in Sources */,
 				1B53E0A02C646A9600006908 /* SceneDelegate.swift in Sources */,
-				1B685D962C680B9400B52DED /* ItalicLabel.swift in Sources */,
+				1B685D962C680B9400B52DED /* SFItalicLabel.swift in Sources */,
 				1B685D902C67F03300B52DED /* SFTitleCell.swift in Sources */,
 				1B685D992C680F8B00B52DED /* MainControllerViewModel.swift in Sources */,
+				1B685D9E2C68203000B52DED /* ext+UIImage.swift in Sources */,
 				1B685D8D2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift in Sources */,
 				1B53E0B22C67D67300006908 /* MainViewController.swift in Sources */,
 			);

@@ -34,8 +34,8 @@ class SFTitlesCollectionViewCell: UICollectionViewCell {
         return image
     }()
     
-    private lazy var titleName: ItalicLabel = {
-        let label = ItalicLabel(size: 16)
+    private lazy var titleName: SFItalicLabel = {
+        let label = SFItalicLabel(size: 16)
         
         return label
     }()

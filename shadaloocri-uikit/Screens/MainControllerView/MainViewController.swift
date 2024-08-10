@@ -21,13 +21,13 @@ class MainViewController: UIViewController {
     private lazy var headerImage: UIImageView = {
         let image = UIImageView.init()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: ConstantImage.logo)
+        image.image = UIImage(named: ConstantImage.logo)?.increaseContrast()
         
         return image
     }()
     
-    private lazy var selectTitleLabel: ItalicLabel = {
-        let label = ItalicLabel(size: 14)
+    private lazy var selectTitleLabel: SFItalicLabel = {
+        let label = SFItalicLabel(size: 14)
         label.text = NSLocalizedString("SF_Select_Your_Titles", comment: "")
         
         return label
@@ -60,6 +60,17 @@ class MainViewController: UIViewController {
         
         return control
     }()
+    
+    private lazy var selectButton: SFPrimaryButton = {
+        let button = SFPrimaryButton()
+        button.setTitle("Let's go!", for: .normal)
+        
+        NSLayoutConstraint.activate([
+            button.heightAnchor.constraint(equalToConstant: 50)
+        ])
+        
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +84,7 @@ class MainViewController: UIViewController {
         view.addSubview(selectTitleLabel)
         view.addSubview(sfTitlesCarouselCollectionView)
         view.addSubview(cardPageControl)
+        view.addSubview(selectButton)
         
         NSLayoutConstraint.activate([
             headerImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -91,6 +103,10 @@ class MainViewController: UIViewController {
             cardPageControl.topAnchor.constraint(equalTo: sfTitlesCarouselCollectionView.bottomAnchor, constant: 10),
             cardPageControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             cardPageControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            
+            selectButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            selectButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            selectButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
         ])
     }
 }
