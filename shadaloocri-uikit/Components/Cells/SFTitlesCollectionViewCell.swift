@@ -34,13 +34,8 @@ class SFTitlesCollectionViewCell: UICollectionViewCell {
         return image
     }()
     
-    private lazy var titleName: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "test"
-        label.textColor = .gray
-        label.textAlignment = .center
-        label.font = .italicSystemFont(ofSize: 16)
+    private lazy var titleName: ItalicLabel = {
+        let label = ItalicLabel(size: 16)
         
         return label
     }()

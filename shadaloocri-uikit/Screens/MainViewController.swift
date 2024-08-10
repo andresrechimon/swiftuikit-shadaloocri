@@ -31,13 +31,9 @@ class MainViewController: UIViewController {
         return image
     }()
     
-    private lazy var selectTitleLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
+    private lazy var selectTitleLabel: ItalicLabel = {
+        let label = ItalicLabel(size: 14)
         label.text = NSLocalizedString("SF_Select_Your_Titles", comment: "")
-        label.textColor = .gray
-        label.textAlignment = .center
-        label.font = .italicSystemFont(ofSize: 14)
         
         return label
     }()

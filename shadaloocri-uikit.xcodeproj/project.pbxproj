@@ -16,6 +16,7 @@
 		1B685D8D2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D8C2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift */; };
 		1B685D902C67F03300B52DED /* SFTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D8F2C67F03300B52DED /* SFTitleCell.swift */; };
 		1B685D932C680AE200B52DED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B685D922C680AE200B52DED /* Localizable.strings */; };
+		1B685D962C680B9400B52DED /* ItalicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D952C680B9400B52DED /* ItalicLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1B685D8C2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTitlesCollectionViewCell.swift; sourceTree = "<group>"; };
 		1B685D8F2C67F03300B52DED /* SFTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTitleCell.swift; sourceTree = "<group>"; };
 		1B685D922C680AE200B52DED /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1B685D952C680B9400B52DED /* ItalicLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItalicLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		1B685D7E2C67E27200B52DED /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1B685D942C680B6400B52DED /* Labels */,
 				1B685D8B2C67EF7100B52DED /* Cells */,
 			);
 			path = Components;
@@ -138,6 +141,14 @@
 				1B685D922C680AE200B52DED /* Localizable.strings */,
 			);
 			path = Localizable;
+			sourceTree = "<group>";
+		};
+		1B685D942C680B6400B52DED /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				1B685D952C680B9400B52DED /* ItalicLabel.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 				1B53E09E2C646A9600006908 /* AppDelegate.swift in Sources */,
 				1B53E0B72C67D74500006908 /* ConstantImage.swift in Sources */,
 				1B53E0A02C646A9600006908 /* SceneDelegate.swift in Sources */,
+				1B685D962C680B9400B52DED /* ItalicLabel.swift in Sources */,
 				1B685D902C67F03300B52DED /* SFTitleCell.swift in Sources */,
 				1B685D8D2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift in Sources */,
 				1B53E0B22C67D67300006908 /* MainViewController.swift in Sources */,
