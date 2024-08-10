@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		1B53E09E2C646A9600006908 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B53E09D2C646A9600006908 /* AppDelegate.swift */; };
 		1B53E0A02C646A9600006908 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B53E09F2C646A9600006908 /* SceneDelegate.swift */; };
-		1B53E0A22C646A9600006908 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B53E0A12C646A9600006908 /* ViewController.swift */; };
-		1B53E0A52C646A9600006908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B53E0A32C646A9600006908 /* Main.storyboard */; };
 		1B53E0A72C646A9700006908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B53E0A62C646A9700006908 /* Assets.xcassets */; };
 		1B53E0AA2C646A9700006908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B53E0A82C646A9700006908 /* LaunchScreen.storyboard */; };
+		1B53E0B22C67D67300006908 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B53E0B12C67D67300006908 /* MainViewController.swift */; };
+		1B53E0B72C67D74500006908 /* ConstantImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B53E0B62C67D74500006908 /* ConstantImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B53E09A2C646A9600006908 /* shadaloocri-uikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shadaloocri-uikit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B53E09A2C646A9600006908 /* Shadaloo C.R.I.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shadaloo C.R.I.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B53E09D2C646A9600006908 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B53E09F2C646A9600006908 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B53E0A12C646A9600006908 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1B53E0A42C646A9600006908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B53E0A62C646A9700006908 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B53E0A92C646A9700006908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B53E0AB2C646A9700006908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B53E0B12C67D67300006908 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1B53E0B62C67D74500006908 /* ConstantImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 		1B53E09B2C646A9600006908 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B53E09A2C646A9600006908 /* shadaloocri-uikit.app */,
+				1B53E09A2C646A9600006908 /* Shadaloo C.R.I.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +56,55 @@
 		1B53E09C2C646A9600006908 /* shadaloocri-uikit */ = {
 			isa = PBXGroup;
 			children = (
+				1B685D7E2C67E27200B52DED /* Components */,
+				1B685D772C67DC3E00B52DED /* Extensions */,
+				1B53E0B42C67D72B00006908 /* Constants */,
+				1B53E0B32C67D6FF00006908 /* Screens */,
 				1B53E09D2C646A9600006908 /* AppDelegate.swift */,
 				1B53E09F2C646A9600006908 /* SceneDelegate.swift */,
-				1B53E0A12C646A9600006908 /* ViewController.swift */,
-				1B53E0A32C646A9600006908 /* Main.storyboard */,
 				1B53E0A62C646A9700006908 /* Assets.xcassets */,
 				1B53E0A82C646A9700006908 /* LaunchScreen.storyboard */,
 				1B53E0AB2C646A9700006908 /* Info.plist */,
 			);
 			path = "shadaloocri-uikit";
+			sourceTree = "<group>";
+		};
+		1B53E0B32C67D6FF00006908 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1B53E0B12C67D67300006908 /* MainViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1B53E0B42C67D72B00006908 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1B53E0B52C67D73400006908 /* Images */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		1B53E0B52C67D73400006908 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1B53E0B62C67D74500006908 /* ConstantImage.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		1B685D772C67DC3E00B52DED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1B685D7E2C67E27200B52DED /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +124,7 @@
 			);
 			name = "shadaloocri-uikit";
 			productName = "shadaloocri-uikit";
-			productReference = 1B53E09A2C646A9600006908 /* shadaloocri-uikit.app */;
+			productReference = 1B53E09A2C646A9600006908 /* Shadaloo C.R.I.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +167,6 @@
 			files = (
 				1B53E0AA2C646A9700006908 /* LaunchScreen.storyboard in Resources */,
 				1B53E0A72C646A9700006908 /* Assets.xcassets in Resources */,
-				1B53E0A52C646A9600006908 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +177,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B53E0A22C646A9600006908 /* ViewController.swift in Sources */,
 				1B53E09E2C646A9600006908 /* AppDelegate.swift in Sources */,
+				1B53E0B72C67D74500006908 /* ConstantImage.swift in Sources */,
 				1B53E0A02C646A9600006908 /* SceneDelegate.swift in Sources */,
+				1B53E0B22C67D67300006908 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1B53E0A32C646A9600006908 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B53E0A42C646A9600006908 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1B53E0A82C646A9700006908 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +328,6 @@
 				INFOPLIST_FILE = "shadaloocri-uikit/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,7 +336,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shadaloocri-uikit";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Shadaloo C.R.I";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,7 +354,6 @@
 				INFOPLIST_FILE = "shadaloocri-uikit/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +362,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shadaloocri-uikit";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Shadaloo C.R.I";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
