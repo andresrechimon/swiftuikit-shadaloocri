@@ -13,6 +13,8 @@
 		1B53E0AA2C646A9700006908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B53E0A82C646A9700006908 /* LaunchScreen.storyboard */; };
 		1B53E0B22C67D67300006908 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B53E0B12C67D67300006908 /* MainViewController.swift */; };
 		1B53E0B72C67D74500006908 /* ConstantImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B53E0B62C67D74500006908 /* ConstantImage.swift */; };
+		1B685D8D2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D8C2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift */; };
+		1B685D902C67F03300B52DED /* SFTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D8F2C67F03300B52DED /* SFTitleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1B53E0AB2C646A9700006908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B53E0B12C67D67300006908 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1B53E0B62C67D74500006908 /* ConstantImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantImage.swift; sourceTree = "<group>"; };
+		1B685D8C2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTitlesCollectionViewCell.swift; sourceTree = "<group>"; };
+		1B685D8F2C67F03300B52DED /* SFTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTitleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		1B53E09C2C646A9600006908 /* shadaloocri-uikit */ = {
 			isa = PBXGroup;
 			children = (
+				1B685D8E2C67F01C00B52DED /* Models */,
 				1B685D7E2C67E27200B52DED /* Components */,
 				1B685D772C67DC3E00B52DED /* Extensions */,
 				1B53E0B42C67D72B00006908 /* Constants */,
@@ -103,8 +108,25 @@
 		1B685D7E2C67E27200B52DED /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1B685D8B2C67EF7100B52DED /* Cells */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		1B685D8B2C67EF7100B52DED /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1B685D8C2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1B685D8E2C67F01C00B52DED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B685D8F2C67F03300B52DED /* SFTitleCell.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +202,8 @@
 				1B53E09E2C646A9600006908 /* AppDelegate.swift in Sources */,
 				1B53E0B72C67D74500006908 /* ConstantImage.swift in Sources */,
 				1B53E0A02C646A9600006908 /* SceneDelegate.swift in Sources */,
+				1B685D902C67F03300B52DED /* SFTitleCell.swift in Sources */,
+				1B685D8D2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift in Sources */,
 				1B53E0B22C67D67300006908 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
