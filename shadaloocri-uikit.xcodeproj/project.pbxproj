@@ -17,6 +17,7 @@
 		1B685D902C67F03300B52DED /* SFTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D8F2C67F03300B52DED /* SFTitleCell.swift */; };
 		1B685D932C680AE200B52DED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B685D922C680AE200B52DED /* Localizable.strings */; };
 		1B685D962C680B9400B52DED /* ItalicLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D952C680B9400B52DED /* ItalicLabel.swift */; };
+		1B685D992C680F8B00B52DED /* MainControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D982C680F8B00B52DED /* MainControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1B685D8F2C67F03300B52DED /* SFTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFTitleCell.swift; sourceTree = "<group>"; };
 		1B685D922C680AE200B52DED /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		1B685D952C680B9400B52DED /* ItalicLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItalicLabel.swift; sourceTree = "<group>"; };
+		1B685D982C680F8B00B52DED /* MainControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +84,7 @@
 		1B53E0B32C67D6FF00006908 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				1B53E0B12C67D67300006908 /* MainViewController.swift */,
+				1B685D972C680F7500B52DED /* MainControllerView */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -149,6 +151,15 @@
 				1B685D952C680B9400B52DED /* ItalicLabel.swift */,
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		1B685D972C680F7500B52DED /* MainControllerView */ = {
+			isa = PBXGroup;
+			children = (
+				1B53E0B12C67D67300006908 /* MainViewController.swift */,
+				1B685D982C680F8B00B52DED /* MainControllerViewModel.swift */,
+			);
+			path = MainControllerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 				1B53E0A02C646A9600006908 /* SceneDelegate.swift in Sources */,
 				1B685D962C680B9400B52DED /* ItalicLabel.swift in Sources */,
 				1B685D902C67F03300B52DED /* SFTitleCell.swift in Sources */,
+				1B685D992C680F8B00B52DED /* MainControllerViewModel.swift in Sources */,
 				1B685D8D2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift in Sources */,
 				1B53E0B22C67D67300006908 /* MainViewController.swift in Sources */,
 			);
