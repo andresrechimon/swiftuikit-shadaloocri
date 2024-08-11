@@ -8,6 +8,9 @@
 import Foundation
 
 struct ConstantImage {
+    // MARK: Backgrounds
+    static let usfivBg = "usfiv-bg"
+    
     // MARK: Logos
     static let logo = "shadaloo-cri-logo"
     static let ssf2tLogo = "ssf2t-logo"
@@ -15,5 +18,6 @@ struct ConstantImage {
     static let usfivLogo = "usfiv-logo"
     
     // MARK: Icons
+    static let bisonBack = "bison-back"
     static let skullIcon = "skull-btn"
 }

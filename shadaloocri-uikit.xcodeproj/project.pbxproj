@@ -21,6 +21,8 @@
 		1B685D9C2C68115500B52DED /* SFPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D9B2C68115500B52DED /* SFPrimaryButton.swift */; };
 		1B685D9E2C68203000B52DED /* ext+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D9D2C68203000B52DED /* ext+UIImage.swift */; };
 		1B685DA02C68231C00B52DED /* TitleSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D9F2C68231C00B52DED /* TitleSelectedViewController.swift */; };
+		1B685DA32C68315E00B52DED /* TitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DA22C68315E00B52DED /* TitleHeaderView.swift */; };
+		1B685DA52C68410A00B52DED /* SFBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DA42C68410A00B52DED /* SFBackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		1B685D9B2C68115500B52DED /* SFPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFPrimaryButton.swift; sourceTree = "<group>"; };
 		1B685D9D2C68203000B52DED /* ext+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ext+UIImage.swift"; sourceTree = "<group>"; };
 		1B685D9F2C68231C00B52DED /* TitleSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSelectedViewController.swift; sourceTree = "<group>"; };
+		1B685DA22C68315E00B52DED /* TitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderView.swift; sourceTree = "<group>"; };
+		1B685DA42C68410A00B52DED /* SFBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 		1B685D7E2C67E27200B52DED /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1B685DA12C68314400B52DED /* Headers */,
 				1B685D9A2C68113000B52DED /* Buttons */,
 				1B685D942C680B6400B52DED /* Labels */,
 				1B685D8B2C67EF7100B52DED /* Cells */,
@@ -175,8 +180,17 @@
 			isa = PBXGroup;
 			children = (
 				1B685D9B2C68115500B52DED /* SFPrimaryButton.swift */,
+				1B685DA42C68410A00B52DED /* SFBackButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		1B685DA12C68314400B52DED /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				1B685DA22C68315E00B52DED /* TitleHeaderView.swift */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +274,9 @@
 				1B685DA02C68231C00B52DED /* TitleSelectedViewController.swift in Sources */,
 				1B685D9E2C68203000B52DED /* ext+UIImage.swift in Sources */,
 				1B685D8D2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift in Sources */,
+				1B685DA32C68315E00B52DED /* TitleHeaderView.swift in Sources */,
 				1B53E0B22C67D67300006908 /* MainViewController.swift in Sources */,
+				1B685DA52C68410A00B52DED /* SFBackButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

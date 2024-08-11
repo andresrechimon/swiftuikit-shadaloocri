@@ -75,7 +75,9 @@ class MainViewController: UIViewController {
     }()
     
     @objc func selectAction() {
-        let vc = TitleSelectedViewController()
+        guard let title = self.titleSelected else { return }
+        
+        let vc = TitleSelectedViewController(title: title)
         
         self.navigationController?.pushViewController(vc, animated: true)
     }

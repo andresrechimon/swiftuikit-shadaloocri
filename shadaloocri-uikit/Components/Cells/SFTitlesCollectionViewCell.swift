@@ -29,7 +29,6 @@ class SFTitlesCollectionViewCell: UICollectionViewCell {
     private lazy var titleImage: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: ConstantImage.logo)
         
         return image
     }()

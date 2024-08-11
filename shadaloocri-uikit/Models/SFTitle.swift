@@ -8,6 +8,7 @@
 import Foundation
 
 struct SFTitle {
+    public let background: String
     public let image: String
     public let name: String
 }
