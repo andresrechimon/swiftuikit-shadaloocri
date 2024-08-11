@@ -23,6 +23,11 @@
 		1B685DA02C68231C00B52DED /* TitleSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685D9F2C68231C00B52DED /* TitleSelectedViewController.swift */; };
 		1B685DA32C68315E00B52DED /* TitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DA22C68315E00B52DED /* TitleHeaderView.swift */; };
 		1B685DA52C68410A00B52DED /* SFBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DA42C68410A00B52DED /* SFBackButton.swift */; };
+		1B685DA72C68551300B52DED /* SFCharactersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DA62C68551300B52DED /* SFCharactersTableViewCell.swift */; };
+		1B685DA92C68560400B52DED /* SFCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DA82C68560400B52DED /* SFCharacter.swift */; };
+		1B685DAC2C68565200B52DED /* TitleSelectedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DAB2C68565200B52DED /* TitleSelectedViewModel.swift */; };
+		1B685DAF2C685D0C00B52DED /* GoldenSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DAE2C685D0C00B52DED /* GoldenSeparatorView.swift */; };
+		1B685DB22C686CF700B52DED /* SFEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DB12C686CF700B52DED /* SFEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,11 @@
 		1B685D9F2C68231C00B52DED /* TitleSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSelectedViewController.swift; sourceTree = "<group>"; };
 		1B685DA22C68315E00B52DED /* TitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderView.swift; sourceTree = "<group>"; };
 		1B685DA42C68410A00B52DED /* SFBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBackButton.swift; sourceTree = "<group>"; };
+		1B685DA62C68551300B52DED /* SFCharactersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCharactersTableViewCell.swift; sourceTree = "<group>"; };
+		1B685DA82C68560400B52DED /* SFCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCharacter.swift; sourceTree = "<group>"; };
+		1B685DAB2C68565200B52DED /* TitleSelectedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSelectedViewModel.swift; sourceTree = "<group>"; };
+		1B685DAE2C685D0C00B52DED /* GoldenSeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenSeparatorView.swift; sourceTree = "<group>"; };
+		1B685DB12C686CF700B52DED /* SFEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,7 @@
 		1B53E09C2C646A9600006908 /* shadaloocri-uikit */ = {
 			isa = PBXGroup;
 			children = (
+				1B685DB02C686CE600B52DED /* Enums */,
 				1B685D912C680ACE00B52DED /* Localizable */,
 				1B685D8E2C67F01C00B52DED /* Models */,
 				1B685D7E2C67E27200B52DED /* Components */,
@@ -94,8 +105,8 @@
 		1B53E0B32C67D6FF00006908 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1B685DAA2C68564200B52DED /* TitleSelectedView */,
 				1B685D972C680F7500B52DED /* MainControllerView */,
-				1B685D9F2C68231C00B52DED /* TitleSelectedViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -127,6 +138,7 @@
 		1B685D7E2C67E27200B52DED /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1B685DAD2C685CF300B52DED /* Separators */,
 				1B685DA12C68314400B52DED /* Headers */,
 				1B685D9A2C68113000B52DED /* Buttons */,
 				1B685D942C680B6400B52DED /* Labels */,
@@ -139,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1B685D8C2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift */,
+				1B685DA62C68551300B52DED /* SFCharactersTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -147,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				1B685D8F2C67F03300B52DED /* SFTitle.swift */,
+				1B685DA82C68560400B52DED /* SFCharacter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,6 +205,31 @@
 				1B685DA22C68315E00B52DED /* TitleHeaderView.swift */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		1B685DAA2C68564200B52DED /* TitleSelectedView */ = {
+			isa = PBXGroup;
+			children = (
+				1B685D9F2C68231C00B52DED /* TitleSelectedViewController.swift */,
+				1B685DAB2C68565200B52DED /* TitleSelectedViewModel.swift */,
+			);
+			path = TitleSelectedView;
+			sourceTree = "<group>";
+		};
+		1B685DAD2C685CF300B52DED /* Separators */ = {
+			isa = PBXGroup;
+			children = (
+				1B685DAE2C685D0C00B52DED /* GoldenSeparatorView.swift */,
+			);
+			path = Separators;
+			sourceTree = "<group>";
+		};
+		1B685DB02C686CE600B52DED /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				1B685DB12C686CF700B52DED /* SFEntry.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +304,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B685D9C2C68115500B52DED /* SFPrimaryButton.swift in Sources */,
+				1B685DAF2C685D0C00B52DED /* GoldenSeparatorView.swift in Sources */,
 				1B53E09E2C646A9600006908 /* AppDelegate.swift in Sources */,
+				1B685DA72C68551300B52DED /* SFCharactersTableViewCell.swift in Sources */,
 				1B53E0B72C67D74500006908 /* ConstantImage.swift in Sources */,
 				1B53E0A02C646A9600006908 /* SceneDelegate.swift in Sources */,
 				1B685D962C680B9400B52DED /* SFItalicLabel.swift in Sources */,
@@ -275,7 +316,10 @@
 				1B685D9E2C68203000B52DED /* ext+UIImage.swift in Sources */,
 				1B685D8D2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift in Sources */,
 				1B685DA32C68315E00B52DED /* TitleHeaderView.swift in Sources */,
+				1B685DB22C686CF700B52DED /* SFEntry.swift in Sources */,
 				1B53E0B22C67D67300006908 /* MainViewController.swift in Sources */,
+				1B685DA92C68560400B52DED /* SFCharacter.swift in Sources */,
+				1B685DAC2C68565200B52DED /* TitleSelectedViewModel.swift in Sources */,
 				1B685DA52C68410A00B52DED /* SFBackButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

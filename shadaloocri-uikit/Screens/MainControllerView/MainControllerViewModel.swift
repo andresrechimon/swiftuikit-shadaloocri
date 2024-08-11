@@ -9,8 +9,8 @@ import Foundation
 
 class MainControllerViewModel {
     let titles: [SFTitle] = [
-        SFTitle(background: "ssf2t-bg", image: ConstantImage.ssf2tLogo, name: "Super Street fighter 2 Turbo"),
-        SFTitle(background: "sf3ti-bg", image: ConstantImage.sf3tiLogo, name: "Street Fighter 3: Third Impact"),
-        SFTitle(background: "usfiv-bg", image: ConstantImage.usfivLogo, name: "Ultra Street Fighter 4"),
+        SFTitle(title: .SSF2T, background: "ssf2t-bg", image: ConstantImage.ssf2tLogo, name: "Super Street fighter 2 Turbo"),
+        SFTitle(title: .SF3TI, background: "sf3ti-bg", image: ConstantImage.sf3tiLogo, name: "Street Fighter 3: Third Impact"),
+        SFTitle(title: .USFIV, background: "usfiv-bg", image: ConstantImage.usfivLogo, name: "Ultra Street Fighter 4"),
     ]
 }
