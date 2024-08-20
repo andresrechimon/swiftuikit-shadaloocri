@@ -113,7 +113,6 @@ extension TitleSelectedViewController: UITableViewDataSource, UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! SFCharactersTableViewCell
         print(charactersSetted[indexPath.row].name)
     }
     

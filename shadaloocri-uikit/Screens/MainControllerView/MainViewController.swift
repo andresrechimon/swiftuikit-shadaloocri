@@ -75,9 +75,7 @@ class MainViewController: UIViewController {
     }()
     
     @objc func selectAction() {
-        guard let title = self.titleSelected else { return }
-        
-        let vc = TitleSelectedViewController(title: title)
+        let vc = TitleSelectedViewController(title: viewModel.titles[cardPageControl.currentPage])
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
@@ -125,7 +123,6 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             guard let cell: SFTitlesCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "SFTitlesCollectionViewCell", for: indexPath) as? SFTitlesCollectionViewCell else { fatalError() }
-        self.titleSelected = viewModel.titles[indexPath.row]
         cell.setup(item: viewModel.titles[indexPath.row])
             
             return cell
@@ -138,13 +135,6 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             return CGSize(width: sfTitlesCarouselCollectionView.frame.width, height: 200)
         
-    }
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-            for cell in sfTitlesCarouselCollectionView.visibleCells {
-                let indexPath = sfTitlesCarouselCollectionView.indexPath(for: cell)
-                self.titleSelected = viewModel.titles[indexPath!.row]
-            }
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
