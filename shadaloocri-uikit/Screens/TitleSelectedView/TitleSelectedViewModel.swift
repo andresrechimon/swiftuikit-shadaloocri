@@ -183,10 +183,10 @@ class TitleSelectedViewModel {
         ),
         //SSF2T
         
-        //SF3TI
+        //SF3TS
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-akuma",
+            title: .SF3TS,
+            avatar: "sf3ts-akuma",
             name: "Akuma",
             bio: "A powerful martial artist and brother of Gouken, known for his deadly and destructive fighting style. His mastery of the Dark Hadou makes him a dangerous adversary.",
             country: "Japan",
@@ -195,8 +195,8 @@ class TitleSelectedViewModel {
             debutGame: "Super Street Fighter II Turbo"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-alex",
+            title: .SF3TS,
+            avatar: "sf3ts-alex",
             name: "Alex",
             bio: "A professional wrestler from the United States with a straightforward and powerful fighting style. His moves focus on brute strength and explosive attacks.",
             country: "United States",
@@ -205,8 +205,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: New Generation"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-chunli",
+            title: .SF3TS,
+            avatar: "sf3ts-chunli",
             name: "Chun-Li",
             bio: "An Interpol officer with a strong sense of justice. Known for her rapid and powerful kicks, Chun-Li uses her exceptional speed to overwhelm her opponents.",
             country: "China",
@@ -215,8 +215,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter II: The World Warrior"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-dudley",
+            title: .SF3TS,
+            avatar: "sf3ts-dudley",
             name: "Dudley",
             bio: "A wealthy boxer from the United Kingdom with a refined and elegant fighting style. His powerful punches and graceful moves make him a sophisticated fighter.",
             country: "United Kingdom",
@@ -225,8 +225,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: New Generation"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-elena",
+            title: .SF3TS,
+            avatar: "sf3ts-elena",
             name: "Elena",
             bio: "A spirited young woman from Kenya with a unique and fluid fighting style based on African dance. Her agility and acrobatic moves make her a challenging opponent.",
             country: "Kenya",
@@ -235,8 +235,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: New Generation"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-hugo",
+            title: .SF3TS,
+            avatar: "sf3ts-hugo",
             name: "Hugo",
             bio: "A massive and powerful wrestler from Germany with a formidable presence. His size and strength allow him to execute crushing throws and powerful strikes.",
             country: "Germany",
@@ -245,8 +245,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: 2nd Impact"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-ibuki",
+            title: .SF3TS,
+            avatar: "sf3ts-ibuki",
             name: "Ibuki",
             bio: "A young and agile ninja from Japan with a keen sense of humor. Her fast and acrobatic moves make her a difficult opponent to catch and defeat.",
             country: "Japan",
@@ -255,8 +255,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: New Generation"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-ken",
+            title: .SF3TS,
+            avatar: "sf3ts-ken",
             name: "Ken",
             bio: "An expert martial artist from the United States and rival to Ryu. Known for his fiery personality and powerful Shoryuken, Ken continues to push the limits of his abilities.",
             country: "United States",
@@ -265,8 +265,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-makoto",
+            title: .SF3TS,
+            avatar: "sf3ts-makoto",
             name: "Makoto",
             bio: "A determined and powerful karate practitioner from Japan. Her strong and straightforward fighting style, combined with her relentless drive, make her a formidable opponent.",
             country: "Japan",
@@ -275,8 +275,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: 3rd Strike"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-q",
+            title: .SF3TS,
+            avatar: "sf3ts-q",
             name: "Q",
             bio: "A mysterious and enigmatic fighter whose true identity remains unknown. His unorthodox fighting style and impressive durability make him a unique challenge.",
             country: "Unknown",
@@ -285,8 +285,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: 3rd Strike"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-necro",
+            title: .SF3TS,
+            avatar: "sf3ts-necro",
             name: "Necro",
             bio: "A genetically modified fighter with the ability to stretch his limbs and generate electrical attacks. His eerie appearance and unpredictable moves make him a dangerous opponent.",
             country: "Unknown",
@@ -295,8 +295,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: New Generation"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-oro",
+            title: .SF3TS,
+            avatar: "sf3ts-oro",
             name: "Oro",
             bio: "An ancient and wise martial artist from Brazil who trains using only one arm. His deep knowledge of martial arts and mystical abilities make him a challenging opponent.",
             country: "Brazil",
@@ -305,8 +305,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: New Generation"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-remy",
+            title: .SF3TS,
+            avatar: "sf3ts-remy",
             name: "Remy",
             bio: "A French fighter who seeks to avenge his sister's death. His moves are characterized by his use of energy-based attacks and his commitment to perfecting his fighting style.",
             country: "France",
@@ -315,8 +315,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: 3rd Strike"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-ryu",
+            title: .SF3TS,
+            avatar: "sf3ts-ryu",
             name: "Ryu",
             bio: "A wandering martial artist traveling the world in search of perfection. His discipline and inner strength are evident in every one of his combat moves.",
             country: "Japan",
@@ -325,8 +325,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-sean",
+            title: .SF3TS,
+            avatar: "sf3ts-sean",
             name: "Sean",
             bio: "A Brazilian street fighter who idolizes Ryu and strives to improve his skills. His moves are a mix of traditional and street-fighting techniques, reflecting his training and dedication.",
             country: "Brazil",
@@ -335,8 +335,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: New Generation"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-twelve",
+            title: .SF3TS,
+            avatar: "sf3ts-twelve",
             name: "Twelve",
             bio: "A mysterious being with the ability to morph his body and replicate the moves of his opponents. His strange and unpredictable abilities make him a unique and challenging fighter.",
             country: "Unknown",
@@ -345,8 +345,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: 3rd Strike"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-urien",
+            title: .SF3TS,
+            avatar: "sf3ts-urien",
             name: "Urien",
             bio: "A powerful and arrogant businessman with a mastery of metal and energy-based attacks. His confidence and devastating moves make him a dangerous opponent.",
             country: "Unknown",
@@ -355,8 +355,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: 2nd Impact"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-yang",
+            title: .SF3TS,
+            avatar: "sf3ts-yang",
             name: "Yang",
             bio: "A young and skilled martial artist from Hong Kong, Yang is the twin brother of Yun. His fighting style is similar to Yun's but with unique techniques and a distinctive approach.",
             country: "Hong Kong",
@@ -365,8 +365,8 @@ class TitleSelectedViewModel {
             debutGame: "Street Fighter III: New Generation"
         ),
         SFCharacter(
-            title: .SF3TI,
-            avatar: "sf3ti-yun",
+            title: .SF3TS,
+            avatar: "sf3ts-yun",
             name: "Yun",
             bio: "A dynamic and energetic fighter from Hong Kong who excels in fast-paced combat. Yun is known for his impressive speed and agility, making him a formidable opponent in battle.",
             country: "Hong Kong",
@@ -374,7 +374,7 @@ class TitleSelectedViewModel {
             debutYear: 1997,
             debutGame: "Street Fighter III: New Generation"
         ),
-        //SF3TI
+        //SF3TS
         
         //USFIV
         // USFIV

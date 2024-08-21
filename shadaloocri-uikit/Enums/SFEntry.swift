@@ -9,6 +9,6 @@ import Foundation
 
 public enum SFEntry: String {
     case SSF2T = "ssf2t"
-    case SF3TI = "sf3ti"
+    case SF3TS = "sf3ts"
     case USFIV = "usfiv"
 }

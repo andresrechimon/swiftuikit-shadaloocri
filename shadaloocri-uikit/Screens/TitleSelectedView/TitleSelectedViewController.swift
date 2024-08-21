@@ -113,7 +113,9 @@ extension TitleSelectedViewController: UITableViewDataSource, UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(charactersSetted[indexPath.row].name)
+        let vc = CharacterViewController(title: self.titleSelected, character: charactersSetted[indexPath.row])
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
