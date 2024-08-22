@@ -58,7 +58,6 @@ class SFCharactersTableViewCell: UITableViewCell {
     
     func setup(model: SFCharacter) {
         avatarImageView.image = UIImage(named: model.avatar)
-        nameLabel.text = model.name
         let strokeTextAttributes: [NSAttributedString.Key : Any] = [
             .strokeColor : UIColor.heavyGold,
             .foregroundColor : UIColor.black,

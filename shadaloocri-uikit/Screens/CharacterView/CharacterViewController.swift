@@ -33,14 +33,43 @@ class CharacterViewController: UIViewController {
         
         return view
     }()
+    
+    private lazy var avatarImageView: UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.image = UIImage(named: self.characterSelected.avatar)
+        
+        NSLayoutConstraint.activate([
+            image.heightAnchor.constraint(equalToConstant: 150),
+            image.widthAnchor.constraint(equalToConstant: 150)
+        ])
+        
+        return image
+    }()
+    
+    private let avatarTrailingInfoStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.distribution = .fillProportionally
+        stackView.spacing = 5
+        return stackView
+    }()
+    
+    private lazy var nameLabel: SFItalicLabel = {
+        let label = SFItalicLabel(size: 14)
+        label.text = NSLocalizedString("SF_Select_Your_Titles", comment: "")
+        
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .white
-        print(self.titleSelected)
-        print(self.characterSelected)
         setupView()
+        setAvatarTrailingInfoLabels()
+        print(self.characterSelected)
     }
     
     required init(title: SFTitle, character: SFCharacter) {
@@ -57,6 +86,8 @@ class CharacterViewController: UIViewController {
         view.addSubview(headerTitleView)
         view.addSubview(backButton)
         view.addSubview(goldenSeparatorView)
+        view.addSubview(avatarImageView)
+        view.addSubview(avatarTrailingInfoStackView)
         
         NSLayoutConstraint.activate([
             headerTitleView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -69,6 +100,35 @@ class CharacterViewController: UIViewController {
             goldenSeparatorView.topAnchor.constraint(equalTo: backButton.bottomAnchor, constant: 20),
             goldenSeparatorView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             goldenSeparatorView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
+            avatarImageView.topAnchor.constraint(equalTo: goldenSeparatorView.bottomAnchor, constant: 15),
+            avatarImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            
+            avatarTrailingInfoStackView.topAnchor.constraint(equalTo: avatarImageView.topAnchor),
+            avatarTrailingInfoStackView.bottomAnchor.constraint(equalTo: avatarImageView.bottomAnchor),
+            avatarTrailingInfoStackView.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: 5),
+            avatarTrailingInfoStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
+    }
+    
+    private func setAvatarTrailingInfoLabels() {
+        [
+         "Name: \(self.characterSelected.name)",
+         "From: \(self.characterSelected.country)",
+         "First appearance: \(self.characterSelected.debutGame) (\(self.characterSelected.debutYear))"
+        ].forEach { info in
+            let label = UILabel()
+            label.numberOfLines = .zero
+            label.adjustsFontSizeToFitWidth = true
+            let strokeTextAttributes: [NSAttributedString.Key : Any] = [
+                .strokeColor : UIColor.heavyGold,
+                .foregroundColor : UIColor.black,
+                .strokeWidth : -2.0,
+                ]
+
+            label.attributedText = NSAttributedString(string: info, attributes: strokeTextAttributes)
+            
+            avatarTrailingInfoStackView.addArrangedSubview(label)
+        }
     }
 }
