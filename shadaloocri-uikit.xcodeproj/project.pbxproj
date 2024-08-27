@@ -28,7 +28,6 @@
 		1B685DAC2C68565200B52DED /* TitleSelectedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DAB2C68565200B52DED /* TitleSelectedViewModel.swift */; };
 		1B685DAF2C685D0C00B52DED /* GoldenSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DAE2C685D0C00B52DED /* GoldenSeparatorView.swift */; };
 		1B685DB22C686CF700B52DED /* SFEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DB12C686CF700B52DED /* SFEntry.swift */; };
-		1B8843792C76AE16004F9314 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8843782C76AE16004F9314 /* CharacterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +54,6 @@
 		1B685DAB2C68565200B52DED /* TitleSelectedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSelectedViewModel.swift; sourceTree = "<group>"; };
 		1B685DAE2C685D0C00B52DED /* GoldenSeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenSeparatorView.swift; sourceTree = "<group>"; };
 		1B685DB12C686CF700B52DED /* SFEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFEntry.swift; sourceTree = "<group>"; };
-		1B8843782C76AE16004F9314 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +105,6 @@
 		1B53E0B32C67D6FF00006908 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				1B8843772C76ADF4004F9314 /* CharacterView */,
 				1B685DAA2C68564200B52DED /* TitleSelectedView */,
 				1B685D972C680F7500B52DED /* MainControllerView */,
 			);
@@ -235,14 +232,6 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
-		1B8843772C76ADF4004F9314 /* CharacterView */ = {
-			isa = PBXGroup;
-			children = (
-				1B8843782C76AE16004F9314 /* CharacterViewController.swift */,
-			);
-			path = CharacterView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -330,7 +319,6 @@
 				1B685DB22C686CF700B52DED /* SFEntry.swift in Sources */,
 				1B53E0B22C67D67300006908 /* MainViewController.swift in Sources */,
 				1B685DA92C68560400B52DED /* SFCharacter.swift in Sources */,
-				1B8843792C76AE16004F9314 /* CharacterViewController.swift in Sources */,
 				1B685DAC2C68565200B52DED /* TitleSelectedViewModel.swift in Sources */,
 				1B685DA52C68410A00B52DED /* SFBackButton.swift in Sources */,
 			);
