@@ -13,7 +13,6 @@ class SFPrimaryButton: UIButton {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.backgroundColor = .mediumGold
-        image.translatesAutoresizingMaskIntoConstraints = false
         image.image = UIImage(named: ConstantImage.skullIcon)
         
         NSLayoutConstraint.activate([

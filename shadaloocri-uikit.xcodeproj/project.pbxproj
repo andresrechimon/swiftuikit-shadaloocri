@@ -28,6 +28,7 @@
 		1B685DAC2C68565200B52DED /* TitleSelectedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DAB2C68565200B52DED /* TitleSelectedViewModel.swift */; };
 		1B685DAF2C685D0C00B52DED /* GoldenSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DAE2C685D0C00B52DED /* GoldenSeparatorView.swift */; };
 		1B685DB22C686CF700B52DED /* SFEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B685DB12C686CF700B52DED /* SFEntry.swift */; };
+		1BC3DBA52C7DFD6100B88736 /* CharacterOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC3DBA42C7DFD6100B88736 /* CharacterOverlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		1B685DAB2C68565200B52DED /* TitleSelectedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSelectedViewModel.swift; sourceTree = "<group>"; };
 		1B685DAE2C685D0C00B52DED /* GoldenSeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenSeparatorView.swift; sourceTree = "<group>"; };
 		1B685DB12C686CF700B52DED /* SFEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFEntry.swift; sourceTree = "<group>"; };
+		1BC3DBA42C7DFD6100B88736 /* CharacterOverlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterOverlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		1B53E0B32C67D6FF00006908 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1BC3DBA32C7DFD4100B88736 /* CharacterOverlayView */,
 				1B685DAA2C68564200B52DED /* TitleSelectedView */,
 				1B685D972C680F7500B52DED /* MainControllerView */,
 			);
@@ -232,6 +235,14 @@
 			path = Enums;
 			sourceTree = "<group>";
 		};
+		1BC3DBA32C7DFD4100B88736 /* CharacterOverlayView */ = {
+			isa = PBXGroup;
+			children = (
+				1BC3DBA42C7DFD6100B88736 /* CharacterOverlayViewController.swift */,
+			);
+			path = CharacterOverlayView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -315,6 +326,7 @@
 				1B685DA02C68231C00B52DED /* TitleSelectedViewController.swift in Sources */,
 				1B685D9E2C68203000B52DED /* ext+UIImage.swift in Sources */,
 				1B685D8D2C67EF9400B52DED /* SFTitlesCollectionViewCell.swift in Sources */,
+				1BC3DBA52C7DFD6100B88736 /* CharacterOverlayViewController.swift in Sources */,
 				1B685DA32C68315E00B52DED /* TitleHeaderView.swift in Sources */,
 				1B685DB22C686CF700B52DED /* SFEntry.swift in Sources */,
 				1B53E0B22C67D67300006908 /* MainViewController.swift in Sources */,

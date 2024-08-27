@@ -113,7 +113,9 @@ extension TitleSelectedViewController: UITableViewDataSource, UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(charactersSetted[indexPath.row])
+        let vc = CharacterOverlayViewController(character: charactersSetted[indexPath.row])
+        
+        vc.appear(sender: self)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
