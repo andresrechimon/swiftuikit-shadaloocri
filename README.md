@@ -4,4 +4,6 @@ DEMO:
 
 SCREENSHOTS:
 
-![Simulator Screenshot - iPhone 15 Pro - 2024-08-27 at 11 07 29](https://github.com/user-attachments/assets/dc66aa80-b778-422d-a548-4144371c9a52)
+![1](https://github.com/user-attachments/assets/b70fac72-90e9-490a-81ec-921e343e2bed)
+![2](https://github.com/user-attachments/assets/d332a65c-1371-4d4c-8528-b95fabd1f2f7)
+![3](https://github.com/user-attachments/assets/49ffce02-fd0c-4606-bd26-bc5efb118fc3)
