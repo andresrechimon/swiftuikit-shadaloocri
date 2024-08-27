@@ -757,17 +757,7 @@ class TitleSelectedViewModel {
             specialMoves: ["Psycho Crusher", "Scissor Kick", "Psycho Shot", "Psycho Punisher"],
             debutYear: 1991,
             debutGame: "Street Fighter II: The World Warrior"
-        ),
-        SFCharacter(
-            title: .USFIV,
-            avatar: "usfiv-akuma",
-            name: "Akuma",
-            bio: "A master of the dark arts and an extremely powerful fighter, Akuma is known for his ruthless fighting style and devastating techniques.",
-            country: "Japan",
-            specialMoves: ["Gou Hadoken", "Gou Shoryuken", "Gou Rasen", "Shun Goku Satsu"],
-            debutYear: 1994,
-            debutGame: "Super Street Fighter II Turbo"
-        ),
+        )
         //USFIV
     ]
 }
