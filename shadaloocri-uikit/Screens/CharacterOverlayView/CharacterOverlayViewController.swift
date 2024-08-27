@@ -47,6 +47,8 @@ class CharacterOverlayViewController: UIViewController {
     private lazy var avatarImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
+        image.layer.borderWidth = 2
+        image.layer.borderColor = UIColor.mediumGold.cgColor
         image.image = UIImage(named: self.characterSelected.avatar)
         
         NSLayoutConstraint.activate([
